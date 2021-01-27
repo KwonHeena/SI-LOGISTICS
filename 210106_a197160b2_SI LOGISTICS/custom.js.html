@@ -1,0 +1,49 @@
+<!--
+   2. 설치 스크립트
+   * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script"
+   src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+   new daum.roughmap.Lander({
+       "timestamp": "1610330848583",
+       "key": "23uzz",
+       "mapWidth": "100%",
+       "mapHeight": "480"
+   }).render();
+</script>
+
+
+<script>
+    $(function(){
+       //bbs shift
+       if($('.bbs-area').length){
+           $('.board_wrapper, .search_wrap,.calendar_wrapper, .pagination_wrap').appendTo('.bbs-area').css('visibility','visible');
+       }
+
+       $('<div class="subside">\
+                    <a href="/page/senter01">\
+                        <i class="fas fa-chart-area"></i>\
+                        물류센터개요&현황\
+                    </a>\
+                </div>\
+                <div class="subside">\
+                    <a href="/page/senter02">\
+                        <i class="fas fa-desktop"></i>\
+                        Service Info\
+                    </a>\
+                </div>\
+                <div class="subside">\
+                    <a href="/page/inform01"">\
+                        <i class="fas fa-book-reader"></i>\
+                        Brochure\
+                    </a>\
+                </div>').appendTo('.subMenu');
+
+       
+   });
+</script>
+
+<script></script>
